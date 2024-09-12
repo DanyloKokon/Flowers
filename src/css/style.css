@@ -1,4 +1,14 @@
-h1,
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./delivery.css');
+@import url('./blog.css');
+@import url('./shop.css');
+@import url('./about.css');
+
+@import url('./footer.css');
+
+/* h1,
 h2,
 h3,
 h4,
@@ -33,11 +43,11 @@ img {
 
 address {
     font-style: normal;
-}
+} */
 
 
 
-.head {
+/* .head {
     display: flex;
 }
 
@@ -49,4 +59,4 @@ address {
 .h31{
     margin-left: 234px;
     margin-top: 337px;
-}
+} */

@@ -1,0 +1,13 @@
+.head {
+    display: flex;
+}
+
+.first {
+    display: flex;
+    gap: 110px;
+}
+
+.h31{
+    margin-left: 234px;
+    margin-top: 337px;
+}
