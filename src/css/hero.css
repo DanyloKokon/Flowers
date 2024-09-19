@@ -1,13 +1,37 @@
-.head {
+.hero-flex {
     display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
 }
 
-.first {
-    display: flex;
-    gap: 110px;
+.hero_btn {
+    width: 64px;
+    height: 76px;
+    
 }
 
-.h31{
-    margin-left: 234px;
-    margin-top: 337px;
+.hero-btn-wrap{
+    margin-top: 110px;
+}
+
+
+.hero-img {
+    width: 145px;
+    height: 274px;
+}
+
+.hero-title {
+position: absolute;
+top: 250px;
+left: 65px;
+}
+
+.hero-position{
+    position: relative;
+}
+
+.hero-text{
+    margin-top: 125px;
+    width: 46px ;
+    height: 34px;
 }
