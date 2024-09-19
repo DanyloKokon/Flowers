@@ -1,3 +1,28 @@
 .delivery {
-    background-color: blue;
-    }
+    display: flex;
+}
+
+.delivery-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+    color: #000000;
+}
+
+.delivery-item {
+    display: flex;
+}
+
+.delivery-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
