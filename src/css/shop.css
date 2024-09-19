@@ -1,0 +1,21 @@
+.store-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+.store-item-img {
+    width: 136px;
+    height: 155px;
+}
+
+.store-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-item{
+    width: calc((100% - 16px) / 2);
+
+}
