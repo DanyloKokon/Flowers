@@ -10,3 +10,14 @@
     margin-top: 100px;
     margin-bottom: 32px;
 }
+
+.about-title::after{
+display: block;
+width: 183pxpx;
+height: 1px ;
+color: black;
+}
+
+.about-title{
+    display: flex;
+}

@@ -7,11 +7,12 @@
 .hero_btn {
     width: 64px;
     height: 76px;
-    
+    background-color: transparent;
 }
 
 .hero-btn-wrap{
     margin-top: 110px;
+    background-color: transparent;
 }
 
 
