@@ -1,0 +1,38 @@
+.about-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-top: 32px;
+    
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 202px;
+    background-color: #000;
+    margin-top: 13px;
+    margin-left: 14px;
+
+
+}
+
+.about-title {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+
+}
+
+.about-img{
+    padding-top: 16px;
+}

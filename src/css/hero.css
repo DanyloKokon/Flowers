@@ -1,13 +1,55 @@
-.head {
+.hero-flex {
     display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
 }
 
-.first {
-    display: flex;
-    gap: 110px;
+.hero-btn {
+    width: 64px;
+    height: 76px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.h31{
-    margin-left: 234px;
-    margin-top: 337px;
+.hero-btn:hover{
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.hero-btn-wrap {
+    margin-top: 110px;
+    background-color: transparent;
+}
+
+
+.hero-img {
+    width: 145px;
+    height: 274px;
+}
+
+.hero-title {
+    position: absolute;
+    top: 250px;
+    left: 15px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 52px;
+    text-align: center;
+    color: #000;
+}
+
+.hero-position {
+    position: relative;
+}
+
+.hero-text {
+    margin-top: 125px;
+    width: 46px;
+    height: 34px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
 }
