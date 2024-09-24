@@ -21,6 +21,7 @@
 }
 
 .store-list {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -149,5 +150,24 @@
 
     .store {
         margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .store-title {
+        margin-bottom: 80px;
+    }
+
+    .store-title::after {
+        width: 1062px;
+    }
+
+    .img-thumb {
+        width: 600px;
+        height: 542px;
+    }
+
+    .store-item {
+        width: 600px;
     }
 }
