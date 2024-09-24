@@ -1,0 +1,82 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 153px;
+    height: 181px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.blog-title {
+    gap: 14px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 44px;
+    color: #000;
+}
+
+.blog-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 202px;
+    background-color: #000;
+
+
+}
+
+.blog-text {
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.blog-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #ffff;
+    background-color: #E86F54;
+    border-radius: 38px;
+    padding: 14px 28px;
+    width: 170px;
+    height: 40px;
+}
+.swiper-button-prev{
+    background-image: url("../img/arrow-left.svg");
+    width:41px;
+    height:27px;
+}
+.swiper-button-next{
+    background-image: url("../img/arrow-right.svg");
+    width:41px;
+    height:27px;
+}
+.swiper-button-prev::after{
+    display: none;
+    
+}
+.swiper-button-next::after{
+    display: none;
+    
+}
