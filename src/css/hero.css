@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-flex {
+        margin-left: 73px;
+    }
+}
+
 .hero-btn {
     width: 64px;
     height: 76px;
@@ -11,9 +17,30 @@
     cursor: pointer;
 }
 
-.hero-btn:hover{
-    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
+@media screen and (min-width: 768px) {
+    .hero-btn {
+        display: none;
+    }
+}
+
+.hero-btn-tab{
+    width: 145px;
+    height: 150px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-btn-tab {
+        display: none;
+    }
+}
+
+
+.hero-btn:hover {
+    animation: heartBeat;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
 }
 
 .hero-btn-wrap {
@@ -22,10 +49,27 @@
 }
 
 
+
+
 .hero-img {
     width: 145px;
     height: 274px;
 }
+
+@media screen and (min-width: 768px) {
+    .hero-img {
+        display: none;
+    }
+}
+
+.hero-img-tab {}
+
+@media screen and (max-width: 320px) {
+    .hero-img-tab {
+        display: none;
+    }
+}
+
 
 .hero-title {
     position: absolute;
@@ -37,6 +81,17 @@
     font-size: 52px;
     text-align: center;
     color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 120px;
+        text-align: center;
+        color: #000;
+        top: 550px;
+    }
 }
 
 .hero-position {
@@ -52,4 +107,146 @@
     font-weight: 400;
     font-size: 14px;
     color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+        margin-right: 40px;
+    }
+}
+
+
+
+
+.Heromodal {
+    display: none;
+    /* Приховати модальне вікно за замовчуванням */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Напівпрозорий фон */
+}
+
+.hero-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /* width: 80%; */
+    /* max-width: 500px; */
+    border-radius: 5px;
+    /* text-align: center; */
+    width: 272px;
+    height: 357px;
+    background: #fff;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.hero-modal-h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.hero-modal-p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #5c5c5c;
+}
+
+.hero-modal-input {
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    width: 216px;
+    height: 39px;
+}
+
+.hero-label-p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-top: 18px;
+}
+
+.hero-send {
+    border-radius: 8px;
+    padding: 8px 74px;
+    width: 216px;
+    height: 37px;
+    background: rgba(232, 111, 84, 0.4);
+    margin-top: 24px;
+}
+
+.hero-modal-button-p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.modalinmodal {
+    display: none;
+    /* Приховати модальне вікно за замовчуванням */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Напівпрозорий фон */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
