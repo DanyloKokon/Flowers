@@ -18,9 +18,10 @@
     }
 }
 .swiper {
+    height: 153px;
+    margin-bottom:28px ;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
 }
 
 .swiper-slide {
@@ -40,6 +41,9 @@
         height: 398px;
 
     }
+    .swiper{
+        height: 398px;
+    }
 }
 
 
@@ -51,7 +55,7 @@
     margin-bottom: 32px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 44px;
+    font-size: 24px;
     color: #000;
 }
 @media screen and (min-width: 767px){
@@ -63,6 +67,7 @@
 
 .blog-title::after {
     content: "";
+    gap: 14px;
     display: block;
     height: 1px;
     width: 202px;
@@ -103,7 +108,6 @@
     color: #ffff;
     background-color: #E86F54;
     border-radius: 38px;
-    padding: 14px 28px;
     width: 170px;
     height: 40px;
     
