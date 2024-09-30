@@ -2,6 +2,13 @@
     display: flex;
     /* justify-content: center; */
     justify-content: space-between;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hero-flex {
+        margin-left: 73px;
+    }
 }
 
 .hero-btn {
@@ -10,6 +17,27 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+    .hero-btn {
+        width: 145px;
+        height: 150px;
+    }
+}
+
+.hero-btn-tab {
+    width: 145px;
+    height: 150px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-btn-tab {
+        display: none;
+    }
+}
+
 
 .hero-btn:hover {
     animation: heartBeat;
@@ -22,11 +50,39 @@
     background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-btn-wrap{
+margin-top: 270px;
+    } 
+}
 
-.hero-img {
+
+.hero-img-thumb {
     width: 145px;
     height: 274px;
+    border-radius: 226px;
+    overflow: hidden;
 }
+
+.hero-img {
+    /* width: 145px;
+    height: 274px; */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero-img-thumb {
+        width: 390px;
+        height: 636px;
+    }
+}
+
+
+
+
 
 .hero-title {
     position: absolute;
@@ -40,12 +96,25 @@
     color: #000;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 120px;
+        text-align: center;
+        color: #000;
+        top: 550px;
+    }
+}
+
 .hero-position {
-    position: relative;
+    /* position: relative; */
+    
 }
 
 .hero-text {
     margin-top: 125px;
+
     width: 46px;
     height: 34px;
 
@@ -53,6 +122,17 @@
     font-weight: 400;
     font-size: 14px;
     color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+        margin-right: 40px;
+        margin-top: 308px;
+    }
 }
 
 
@@ -150,17 +230,19 @@
 
 
 .modalinmodal {
-    display: none; /* Приховати модальне вікно за замовчуванням */
+    display: none;
+    /* Приховати модальне вікно за замовчуванням */
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
-  }
-  
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Напівпрозорий фон */
+}
+
+.modal-content {
     background-color: #fff;
     margin: 15% auto;
     padding: 20px;
@@ -169,18 +251,18 @@
     max-width: 500px;
     border-radius: 5px;
     text-align: center;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
