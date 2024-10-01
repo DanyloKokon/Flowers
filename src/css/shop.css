@@ -97,7 +97,7 @@
     }
 
     .store-list {
-        gap: 32px;
+        gap: 40px 32px;
     }
 
     .store-item {
@@ -172,7 +172,7 @@
     }
 
     .store-list {
-        gap: 32px;
+        gap: 64px 32px;
     }
 
     .store-item-text-title {
