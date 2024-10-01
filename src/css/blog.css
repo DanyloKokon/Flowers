@@ -155,12 +155,14 @@
     background-image: url("../img/arrow-left.svg");
     width: 41px;
     height: 27px;
+    background-size: contain;
 }
 
 .swiper-button-next {
     background-image: url("../img/arrow-right.svg");
     width: 41px;
     height: 27px;
+    background-size: contain;
 }
 
 .swiper-button-prev::after {
@@ -172,12 +174,17 @@
     display: none;
 
 }
-@media screen and (min-width: 767px){
-    .swiper-button-next .swiper-button-prev{
+@media screen and (min-width: 768px){
+    .swiper-button-next, .swiper-button-prev{
         width: 96px;
         height:64px;
     }
         
     
+}
+@media screen and (min-width: 1024px){
+    .swiper-button-next, .swiper-button-prev{
+        margin-top: 179px;
+    }
 }
     
