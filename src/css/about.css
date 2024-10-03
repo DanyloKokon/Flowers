@@ -1,0 +1,132 @@
+.about-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-top: 32px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        color: #000;
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .about-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 22px;
+        color: #000;
+
+    }
+}
+
+.about-wrap-text {}
+
+@media screen and (min-width: 768px) {
+    .about-wrap-text {
+        display: flex;
+    }
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 202px;
+    background-color: #000;
+    margin-top: 13px;
+    margin-left: 14px;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .about-title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 538px;
+        background-color: #000;
+        margin-top: 23px;
+        margin-left: 16px;
+
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 1050px;
+        background-color: #000;
+        margin-top: 23px;
+        margin-left: 16px;
+
+
+    }
+}
+
+.about-title {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+
+}
+
+@media screen and (min-width: 768px) {
+    .about-title {
+        display: flex;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 44px;
+        color: #000;
+
+    }
+}
+
+.about-img {
+    padding-top: 16px;
+    width: 288px;
+    height: 178px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-img {
+        width: 343px;
+        height: 217px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-img {
+        border-radius: 0 639px 639px 0;
+        width: 632px;
+        height: 344px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-wrap-text {
+        
+        display: flex;
+        align-items: center;
+    }
+}
