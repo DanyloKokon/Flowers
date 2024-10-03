@@ -16,8 +16,8 @@
 
     
     
-  <script type="module" crossorigin src="/Flowers/assets/index-b23b60d2.js"></script>
-  <link rel="stylesheet" href="/Flowers/assets/index-3b6709ee.css">
+  <script type="module" crossorigin src="/Flowers/assets/index-e29d3ce0.js"></script>
+  <link rel="stylesheet" href="/Flowers/assets/index-ee4c0fbe.css">
 </head>
 
 <body>
@@ -92,6 +92,32 @@
 
         </div>
 </section>
+    <div id="myHeroModal" class="Heromodal">
+    <div class="hero-modal-content">
+        <span class="close">&times;</span>
+        <h2 class="hero-modal-h2">Contact us</h2>
+        <p class="hero-modal-p">If you have any additional questions or you want to clarify
+            something before you make
+            an order please fill in your contact details. We will call you back.</p>
+
+        <form action="">
+            <label for="">
+                <p class="hero-label-p">Name</p>
+                <input class="hero-modal-input" type="text">
+            </label>
+
+            <label for="">
+                <p class="hero-label-p">Email</p>
+                <input class="hero-modal-input" type="mail">
+            </label>
+        </form>
+        <button id="openHeroModalinModalBtn" class="hero-send">
+            <p class="hero-modal-button-p">Send</p>
+
+        </button>
+    </div>
+</div>
+
     <section class="about">
     <div class="container">
         <div class="about-title-wrap">
@@ -203,9 +229,15 @@
             <div class="swiper-button-next"></div>
         </div>
         <h3 class="blog-text">Follow to our newsletter</h3>
-        <button class="blog-btn">Subscribe</button>
+        <button class="blog-btn" data-modal-open>Subscribe</button>
     </div>
 </section>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="btn" data-modal-close>Закрити</button>
+        <p>It is modal</p>
+    </div>
+</div>
     <footer class="footer">
     <div class="container">
         <div class="flex_div">
@@ -243,33 +275,10 @@
     </div>
 </footer>
 </body>
-    <div id="myHeroModal" class="Heromodal">
-    <div class="hero-modal-content">
-        <span class="close">&times;</span>
-        <h2 class="hero-modal-h2">Contact us</h2>
-        <p class="hero-modal-p">If you have any additional questions or you want to clarify
-            something before you make
-            an order please fill in your contact details. We will call you back.</p>
-
-        <form action="">
-            <label for="">
-                <p class="hero-label-p">Name</p>
-                <input class="hero-modal-input" type="text">
-            </label>
-
-            <label for="">
-                <p class="hero-label-p">Email</p>
-                <input class="hero-modal-input" type="mail">
-            </label>
-        </form>
-        <button id="openHeroModalinModalBtn" class="hero-send">
-            <p class="hero-modal-button-p">Send</p>
-
-        </button>
-    </div>
-</div>
-
+ 
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     
     
     
