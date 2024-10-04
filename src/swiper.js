@@ -22,6 +22,7 @@ var swiper = new Swiper(".mySwiper", {
         depth: 100,
         modifier: 1,
         slideShadows: false,
+        scale:0.8,
     },
     navigation: {
         nextEl: ".swiper-button-next",
