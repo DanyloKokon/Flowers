@@ -9,6 +9,7 @@ align-items: center;
         display: flex;
         gap: 24px;
         align-items: center;
+        
 }
 .header-logo{
     margin-right: auto;
