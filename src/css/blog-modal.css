@@ -45,6 +45,7 @@
   height: 18px;
   width: 18px;
   position: relative;
+
 }
 
 .blog-modal-title {
@@ -62,8 +63,8 @@
 }
 
 .blog-modal-background {
+  background-image: url(../img/blog-modal-img-tab-1px.jpg);
   text-align: right;
-  background: url(../img/blog-modal-img-mob-1px.jpg);
   background-size: cover;
   height: 121px;
 }
@@ -107,7 +108,7 @@
 @media screen and (min-width:768px) {
   .blog-modal {
     width: 588px;
-    min-height: 644px;
+    height: 644px;
   }
 
   .blog-modal-btn {
@@ -117,7 +118,6 @@
 
   .blog-modal-background {
     text-align: right;
-    background: url(../img/blog-modal-img-tab-1px.jpg);
     background-size: cover;
     height: 271px;
   }
@@ -136,6 +136,7 @@
   }
 
   .blog-button-subm {
+    margin-top: 28px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 8px;
@@ -173,19 +174,42 @@
 
 
 @media (min-width:1280px) {
-  .blog-modal{
-    height: 528px;
+  .blog-modal {
+    gap: 40px;
+    display: flex;
     width: 860px;
+    height: 528px;
   }
-  .blog-modal-background{
-    background-image: url(../img/blog-modal-img-desc-1px\ \(1\).jpg);
-    background-size: cover;
-    
-  }
-  .blog-modal-btn{
+
+
+  .blog-modal-btn {
+    top: 24px;
+    left: 408px;
+    background-color: #ffff;
     height: 24px;
     width: 24px;
   }
+  .blog-modal-background{
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 430px;
+    height: 528px;
+  }
+  .blog-modal-content{
+    padding: 0;
+    width: 336px;
+  }
+  .blog-modal-title{
+    width: 352px;
+    font-size: 28px;
+    padding-top: 111px;
+  }
+  .blog-modal-text{
+    width: 336px;
+  }
+
+
+
 
 
 }
