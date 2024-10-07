@@ -16,8 +16,8 @@
 
     
     
-  <script type="module" crossorigin src="/Flowers/assets/index-f4a4db6e.js"></script>
-  <link rel="stylesheet" href="/Flowers/assets/index-697a8efc.css">
+  <script type="module" crossorigin src="/Flowers/assets/index-3c027a99.js"></script>
+  <link rel="stylesheet" href="/Flowers/assets/index-9c756910.css">
 </head>
 
 <body>
@@ -50,7 +50,12 @@
                 <div class="hero-flex">
                     <p class="hero-text">flower
                         studio</p>
-                    <div class="hero-img-thumb"><img class="hero-img" src="/Flowers/assets/heroimg-b2d6352c.jpg" alt=""></div>
+                    <div class="hero-img-thumb">
+                        
+                        <img class="hero-img" srcset="/Flowers/assets/mob-amenome-x1-5af37091.jpg 145w, /Flowers/assets/mob-amenome-x2-00140d43.jpg 290w, /Flowers/assets/desctop-amenome-x1-5500c8cd.jpg 390w, /Flowers/assets/desctop-amenome-2x-3f517dcd.jpg 780w"
+                    sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
+                    src="./img/mob-amenome-x1" alt="Опис зображення для всіх версій" />
+                    </div>
 
                     <div class="hero-btn-wrap">
                         <button id="openHeroModalBtn" class="hero-btn animate__animated animate__heartBeat"><img
@@ -94,7 +99,7 @@
 </section>
     <div id="myHeroModal" class="Heromodal">
     <div class="hero-modal-content">
-        <span class="close">&times;</span>
+        <span class="closeheromodal">&times;</span>
         <h2 class="hero-modal-h2">Contact us</h2>
         <p class="hero-modal-p">If you have any additional questions or you want to clarify
             something before you make
@@ -111,7 +116,7 @@
                 <input class="hero-modal-input" type="mail">
             </label>
         </form>
-        <button id="openHeroModalinModalBtn" class="hero-send">
+        <button id="openthanksmodal closeheromodal" class="hero-send">
             <p class="hero-modal-button-p">Send</p>
 
         </button>
@@ -122,14 +127,18 @@
     <div class="container">
         <div class="about-title-wrap">
             <h2 class="about-title">ABOUT</h2>
-            
+
         </div>
         <div class="about-wrap-text">
-            <p class="about-text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people
+            <p class="about-text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day
+                we give people
                 the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as
                 you are.</p>
 
-            <img class="about-img" src="/Flowers/assets/image_about-89933f23.jpg" alt="">
+
+            <div class="thumb-about"><img class="about-img" srcset="/Flowers/assets/mob-about-x1-01088517.jpg 228w, /Flowers/assets/mob-about-2x-a764e6da.jpg 456w, /Flowers/assets/tab_about-x1-ef76dd01.jpg 334w, /Flowers/assets/tab_about-2x-bfbb0600.jpg 668w, /Flowers/assets/desc_about-x1-f57003e7.jpg 632w, /Flowers/assets/desc-about-2x-e465547a.jpg 1264w"
+                    sizes="(min-width: 1280px) 632px, (min-width: 768px) 334px, (min-width: 320px) 228px, 100vw"
+                    src="/Flowers/assets/mob-about-x1-01088517.jpg" alt="Опис зображення для всіх версій" /></div>
         </div>
     </div>
 </section>
@@ -277,45 +286,49 @@
 
     </div>
 </div>
+    
     <footer class="footer">
-    <div class="container">
-        <div class="flex_div">
-            <a href="./" class="footer_logo">
-                <img src="./img/Logo.svg" alt="Logo">
-            </a>
-            <div>
-                <h3>Navigation</h3>
-                <ul class="footer_navigation">
-                    <li class="navigation_item">Anemone</li>
-                    <li class="navigation_item">About us</li>
-                    <li class="navigation_item">Store</li>
-                    <li class="navigation_item">Delivery</li>
+        <div class="container">
+            <div class="flex_div">
+                <a href="./" class="footer_logo">
+                    <img src="/Flowers/assets/logo-9f94d1d4.svg" alt="Logo">
+                </a>
+                <!-- <div class="first_flex"> -->
+                    <div>
+                        <h3>Navigation</h3>
+                        <ul class="footer_navigation">
+                            <li class="navigation_item">Anemone</li>
+                            <li class="navigation_item">About us</li>
+                            <li class="navigation_item">Store</li>
+                            <li class="navigation_item">Delivery</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Opening times</h3>
+                        <ul class="Opening_times">
+                            <li class="Open_item">Every day <br> 9:00 - 22:00</li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="second_flex"> -->
+                    <div>
+                        <h3>Contacts</h3>
+                        <ul class="Contacts">
+                            <li class="Contacts_item">+38 063 123 45 67</li>
+                            <li class="Contacts_item">anemonestudio@example.com</li>
+                            <li class="Contacts_item">Reitarska Street, 11 Kyiv, Ukraine</li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+                <ul class="logos">
+                    <li><img src="/Flowers/assets/facebook-aa877196.svg" alt="facebook"></li>
+                    <li><img src="/Flowers/assets/instagram-ab7e9f33.svg" alt="instagram"></li>
                 </ul>
             </div>
-            <div>
-                <h3>Opening times</h3>
-                <ul class="Opening_times">
-                    <li class="Open_item">Every day 9:00 - 22:00</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Contacts</h3>
-                <ul class="Contacts">
-                    <li class="Contacts_item">+38 063 123 45 67</li>
-                    <li class="Contacts_item">anemonestudio@example.com</li>
-                    <li class="Contacts_item">Reitarska Street, 11 Kyiv, Ukraine</li>
-                </ul>
-            </div>
-            <ul>
-                <li><img src="/Flowers/assets/facebook-aa877196.svg" alt="facebook"></li>
-                <li><img src="/Flowers/assets/instagram-ab7e9f33.svg" alt="instagram"></li>
-            </ul>
         </div>
-    </div>
-</footer>
 
-</body>
-
+    </footer>
 
  
   
