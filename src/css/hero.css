@@ -108,10 +108,10 @@
     }
 }
 
-.hero-position {
+/* .hero-position {
     /* position: relative; */
 
-}
+ 
 
 .hero-text {
     margin-top: 125px;
@@ -281,4 +281,5 @@
     font-size: 14px;
     text-align: center;
     color: #fff;
+    
 }
