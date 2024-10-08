@@ -1,18 +1,20 @@
 .delivery {
     padding-bottom: 161px;
-    background-image:url(../img/image_delivery.jpg);
+    background-image: url(../img/image_delivery.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 320px 135px;
 }
+
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .delivery {
-    background-image:url(../img/image-delivery-2xmob.jpg) ;
-  }
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .delivery {
+        background-image: url(../img/image-delivery-2xmob.jpg);
+    }
 }
+
 .delivery-title {
     font-family: var(--font-family);
     font-size: 24px;
@@ -25,9 +27,11 @@
     align-items: center;
     gap: 14px;
 }
+
 .delivery-list {
     margin-bottom: 26px;
 }
+
 .delivery-title:after {
     content: "";
     display: block;
@@ -69,8 +73,26 @@
     .delivery {
         padding-bottom: 304px;
         background-size: 764px 264px;
-        /* background-image: url("tab1x"); */
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .delivery {
+            background-image: url(../img/image-delivery-1xtab.jpg);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .delivery {
+            background-image: url(../img/image-delivery-2xtab.jpg);
+        }
+    }
+
     .delivery-title:after {
         width: 573px;
     }
@@ -102,26 +124,44 @@
         font-weight: 500;
         line-height: 31.69px;
     }
+
     .delivery-list {
         margin-bottom: 40px;
-    } 
+    }
 }
 
 @media (min-width: 1280px) {
     .delivery {
         background-size: 1280px 391px;
         padding-bottom: 451px;
-        /* background-image: url("desc1x"); */
-        
+
     }
+    @media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .delivery {
+        background-image: url(../img/image-delivery-1xdesc.jpg);
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .delivery {
+        background-image: url(../img/image-delivery-2xdesc.jpg);
+    }
+}
     .delivery-title:after {
         width: 985px;
     }
+
     .delivery-item {
         gap: 56px;
         width: 1088px;
         margin-bottom: 32px;
     }
+
     .delivery-step {
         font-size: 26px;
         font-weight: 500;
@@ -129,5 +169,4 @@
         width: 64px;
         height: 64px;
     }
-    
 }
