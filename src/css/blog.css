@@ -1,7 +1,42 @@
+.container {
+    margin: 0 auto;
+    width: 320px;
+    padding: 0 16 px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 24px;
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
 .swiper {
+    height: 153px;
+    margin-bottom: 28px;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+}
+
+.blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width:768px) {
+    .blog {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
 }
 
 .swiper-slide {
@@ -16,6 +51,32 @@
     width: 100%;
 }
 
+@media screen and (min-width: 767px) {
+    .swiper-slide {
+        width: 344px;
+        height: 398px;
+
+    }
+
+    .swiper {
+        height: 398px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .swiper-slide {
+        width: 390px;
+        height: 421px;
+
+    }
+
+    .swiper {
+        height: 421px;
+    }
+}
+
+
+
 .blog-title {
     gap: 14px;
     justify-content: space-between;
@@ -24,18 +85,39 @@
     margin-bottom: 32px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 44px;
+    font-size: 24px;
     color: #000;
+}
+
+@media screen and (min-width: 767px) {
+    .blog-title {
+        font-size: 54px;
+    }
+
 }
 
 .blog-title::after {
     content: "";
+    gap: 14px;
     display: block;
     height: 1px;
     width: 202px;
     background-color: #000;
+}
 
+@media screen and (min-width: 767px) {
+    .blog-title::after {
+        height: 1px;
+        width: 573px;
+    }
 
+}
+
+@media screen and (min-width: 1280px) {
+    .blog-title::after {
+        height: 1px;
+        width: 1085px;
+    }
 }
 
 .blog-text {
@@ -46,6 +128,13 @@
     font-size: 18px;
     color: #000;
 }
+
+@media screen and (min-width: 767px) {
+    .blog-text {
+        font-size: 32px;
+    }
+}
+
 
 .blog-btn {
     display: block;
@@ -58,25 +147,69 @@
     color: #ffff;
     background-color: #E86F54;
     border-radius: 38px;
-    padding: 14px 28px;
     width: 170px;
     height: 40px;
+
 }
-.swiper-button-prev{
+
+
+@media screen and (min-width: 767px) {
+    .blog-btn {
+        font-size: 28px;
+        width: 280px;
+        height: 64px;
+    }
+
+
+}
+
+.swiper-button-prev {
+    position: absolute;
+    background-repeat: no-repeat;
     background-image: url("../img/arrow-left.svg");
-    width:41px;
-    height:27px;
+    width: 41px;
+    height: 27px;
+    background-size: contain;
 }
-.swiper-button-next{
+
+.swiper-button-next {
+    position: absolute;
+    background-repeat: no-repeat;
     background-image: url("../img/arrow-right.svg");
-    width:41px;
-    height:27px;
+    width: 41px;
+    height: 27px;
+    background-size: contain;
 }
-.swiper-button-prev::after{
+
+.swiper-button-prev::after {
     display: none;
-    
+
 }
-.swiper-button-next::after{
+
+.swiper-button-next::after {
     display: none;
-    
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        height: 64px;
+        width: 96px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .swiper-button-next {
+        background-image: url(../img/black-arrow-right.svg);
+    }
+
+    .swiper-button-prev {
+        background-image: url(../img/black-arrow-left.svg);
+
+    }
 }

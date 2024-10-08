@@ -1,0 +1,116 @@
+
+
+li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    font-family: "Inter", sans-serif;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36pxpx;
+        font-family: "Inter", sans-serif;
+    }
+
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.footer_logo {
+    @media (max-width: 1279px) {
+        display: none;
+    }
+
+    @media (min-width: 1280px) {
+        margin-right: 210px;
+    }
+}
+
+/* <<<<<<<<<<<----------------NAVIGATION---------------------------->>>>>>> */
+.footer_navigation {
+    width: 116px;
+
+    @media (min-width: 768px) {
+        width: 144px;
+    }
+
+    @media (min-width: 1279px) {
+        width: 116px;
+    }
+
+}
+
+
+.navigation_item {
+    margin-top: 18px;
+    margin-bottom: 1;
+
+}
+
+/* <<<<<<<<<<<----------------OPENTIME---------------------------->>>>>>> */
+.opening_times {
+    width: 128px;
+}
+
+/* <<<<<<<<<<<----------------CONTACTS---------------------------->>>>>>> */
+.Contacts {
+    width: 128px;
+
+    word-wrap: break-word;
+
+    @media (min-width: 768px) {
+        width: 237px;
+
+    }
+}
+
+.Contacts_item {
+    margin-bottom: 12px;
+}
+
+
+.logos {
+    display: flex;
+    gap: 14px;
+    margin-left: auto;
+
+    @media (min-width: 1280px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        margin-left: auto;
+    }
+}
+
+.flex_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        gap: 44px;
+
+    }
+
+    @media (min-width: 1280px) {
+        gap: 96px;
+
+    }
+}
