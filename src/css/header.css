@@ -115,7 +115,7 @@ align-items: center;
     }
     
     .menu__nav {
-        color: $main-color;
+        color: main-color;
         font-weight: 400;
         font-size: 20px;
         line: height 1.2em;
