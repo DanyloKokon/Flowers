@@ -5,7 +5,7 @@ const modal = document.getElementById("myHeroModal");
 const btn = document.getElementById("openHeroModalBtn");
 
 // Отримуємо елемент <span> для закриття модального вікна
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("closeheromodal")[0];
 
 // Коли користувач натискає на кнопку, відкриваємо модальне вікно
 btn.onclick = function() {

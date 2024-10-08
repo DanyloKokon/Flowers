@@ -17,6 +17,56 @@
                 <svg fill="currentColor" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-Burger"></use>
                 </svg>
-            </button>
-    </div>
-</header>
+            </button>button data-open-menu type="button" class="header__button">
+            <svg class="header__menu" width="18px" height="16px">
+                <use href="/src/images/symbol-defs.svg#burger"></use>
+            </svg>
+        </button>
+    </section>
+</div>
+<section data-menu-backdrop class="backdrop menu__is-hidden">
+    <button data-close-menu class="menu__close" type="button">
+        <svg class="menu__cross" width="24px" height="24px">
+            <use href="/src/images/symbol-defs.svg#cross"></use>
+        </svg>
+    </button>
+    <ul class="menu__list">
+        <li class="menu__item">
+            <button class="list__button"><a class="menu__nav" href="#1">Anemone</a></button>
+        </li>
+        <li class="menu__item">
+            <button class="list__button"><a class="menu__nav" href="#2">About us</a></button>
+        </li>
+        <li class="menu__item">
+            <button class="list__button"><a class="menu__nav" href="#3">Store</a></button>
+        </li>
+        <li class="menu__item">
+            <button class="list__button"><a class="menu__nav" href="#4">Delivery</a></button>
+        </li>
+        <li class="menu__item">
+            <button class="list__button"><a class="menu__nav" href="#5">Blog</a></button>
+        </li>
+    </ul>
+</section>
+
+<script>
+    const refse = {
+        openModalBtn: document.querySelector("[data-open-menu]"),
+        backdrop: document.querySelector("[data-menu-backdrop]"),
+        closeModalBtn: document.querySelector("[data-close-menu]"),
+    };
+
+    refse.openModalBtn.addEventListener("click", toggleModal);
+    refse.closeModalBtn.addEventListener("click", toggleModal);
+    refse.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+        refse.backdrop.classList.toggle("menu__is-hidden");
+    }
+
+    function logBackdropClick() {
+        console.log("Ще клік в бекдроп");
+    }
+</script>
+</div>
+</header> 
