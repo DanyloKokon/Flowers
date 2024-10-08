@@ -1,139 +1,151 @@
-.header-flex{
-display: flex;
-align-items: center;
+.header-flex {
+    display: flex;
+    align-items: center;
 }
-.header-list{
+
+.header-list {
     @media screen and (max-width: 767px) {
-     display: none;
-        }
-        display: flex;
-        gap: 24px;
-        align-items: center;
+        display: none;
+    }
+
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
-.header-logo{
+
+.header-logo {
     margin-right: auto;
-    
+
 }
-.header{
+
+.header {
     padding-top: 24px;
 }
-.menu-toggle-btn{
+
+.menu-toggle-btn {
     @media screen and (min-width: 768px) {
         display: none;
     }
 
-    }
-    
-    .header__list {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .header__item {
-        display: none;
-        @media screen and (min-width: 768px) {
-            margin-left: 24px;
-            display: flex;
-        }
-        @media screen and (min-width: 1280px) {
-            margin-left: 48px;
-            display: flex;
-        }
-    }
-    
-    .header__item:first-child {
-        margin-left: 0px;
-    }
-    
-    .navigation {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        color: standart-color;
-    }
-    
-    .header__phone {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .header__box {
-        display: flex;
-        align-items: center;
-        padding-top: 16px;
-    }
-    
-    .header__button {
-        display: block;
-        border: none;
-        background: transparent;
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
+}
 
+.header__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__item {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 24px;
+        display: flex;
     }
-    .menu-backdrop{
-        background-color: $button-color;
-        width: 320px;
-        left: calc((100% - 320px) / 2);
-        height: 100%;
-        position: fixed;
-        top: 0;
-        opacity: 1;
-        z-index: 1000;
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 48px;
+        display: flex;
     }
+}
+
+.header__item:first-child {
+    margin-left: 0px;
+}
+
+.navigation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: standart-color;
+}
+.navigation-item:hover{ 
+    transform: scale(1.1);
+}
+
+.header__phone{
+    width: 20px;
+    height: 20px;
+}
     
-    .menu__close {
-        background: transparent;
-        border: none;
-        margin-left: auto;
-        display: block;
-        margin-top: 22px;
-        margin-right: 22px;
+.header__box {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.header__button {
+    display: block;
+    border: none;
+    background: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
-    
-    .menu__cross {
-        fill: $main-color;
-        width: 24px;
-        height: 24px;
+
+}
+
+.menu-backdrop {
+    background-color: pink;
+    width: 320px;
+    left: calc((100% - 320px) / 2);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    z-index: 1000;
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
-    
-    .menu__list {
-        display: block;
-        text-align: center;
-        padding-top: 90px;
-        padding-bottom: 180px;
-    }
-    
-    .menu__item {
-        margin-top: 24px;
-    }
-    
-    .menu__nav {
-        color: main-color;
-        font-weight: 400;
-        font-size: 20px;
-        line: height 1.2em;
-    }
-    
-    .menu__is-hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    .header__contact {
-        border: none;
-        padding: 0;
-        background: transparent;
-    }
-    
-    .list__button {
-        border: none;
-        padding: 0;
-        background: transparent;
-    }
+}
+.menu__close {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-top: 22px;
+    margin-right: 22px;
+}
+
+.menu__cross {
+    fill:black;
+    width: 24px;
+    height: 24px;
+}
+
+.menu__list {
+    display: block;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
+}
+
+.menu__item {
+    margin-top: 24px;
+}
+
+.menu__nav {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.menu__is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header__contact {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.list__button {
+    border: none;
+    padding: 0;
+    background: transparent;
+}  
