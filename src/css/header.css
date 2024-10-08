@@ -15,7 +15,7 @@
 
 .header-logo {
     margin-right: auto;
-
+    transition: transform 500ms ease-in-out;
 }
 
 .header {
@@ -58,7 +58,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: standart-color;
+    color: black;
+    transition:  transform 500ms ease-in-out;
 }
 .navigation-item:hover{ 
     transform: scale(1.1);
@@ -68,7 +69,7 @@
     width: 20px;
     height: 20px;
 }
-    
+
 .header__box {
     display: flex;
     align-items: center;
