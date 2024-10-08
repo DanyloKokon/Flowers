@@ -5,12 +5,14 @@
 
 .header-list {
     @media screen and (max-width: 767px) {
+
         display: none;
     }
 
     display: flex;
     gap: 24px;
     align-items: center;
+
 }
 
 .header-logo {
