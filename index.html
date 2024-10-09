@@ -16,8 +16,8 @@
 
     
     
-  <script type="module" crossorigin src="/Flowers/assets/index-4dc0e2fa.js"></script>
-  <link rel="stylesheet" href="/Flowers/assets/index-c2946101.css">
+  <script type="module" crossorigin src="/Flowers/assets/index-6e179eda.js"></script>
+  <link rel="stylesheet" href="/Flowers/assets/index-7f4ec30d.css">
 </head>
 
 <body>
@@ -34,20 +34,14 @@
             </ul>
         </nav>
         <button class="header-button"><img src="/Flowers/assets/tel-7208471a.svg" alt=""></button>
-        <button class="menu-toggle-btn js-open-menu" 
-            aria-expanded="false"
+        <button data-open-menu type="button" class="header__button" aria-expanded="false"
             aria-controls="mobile-menu">
                 <svg fill="currentColor" width="24" height="24">
                     <use href="/Flowers/assets/symbol-defs-ab42109c.svg#icon-Burger"></use>
                 </svg>
-            </button>button data-open-menu type="button" class="header__button">
-            <svg class="header__menu" width="18px" height="16px">
-                <use href="/src/images/symbol-defs.svg#burger"></use>
-            </svg>
         </button>
-    </section>
-</div>
-<section data-menu-backdrop class="backdrop menu__is-hidden">
+    </div>
+<section data-menu-backdrop class="menu-backdrop__is-hidden">
     <button data-close-menu class="menu__close" type="button">
         <svg class="menu__cross" width="24px" height="24px">
             <use href="/src/images/symbol-defs.svg#cross"></use>
@@ -71,6 +65,7 @@
         </li>
     </ul>
 </section>
+</header>
 
 <script>
     const refse = {
@@ -91,8 +86,6 @@
         console.log("Ще клік в бекдроп");
     }
 </script>
-</div>
-</header> 
     <section class="hero">
     <div class="container">
         <div class="hero-wraper">
