@@ -149,7 +149,13 @@
     border-radius: 38px;
     width: 170px;
     height: 40px;
+    
 
+}
+.blog-btn:hover{
+    transition: background-color 500ms ease-in-out, transform 500ms ease-in-out;
+    transform: scale(1.1);
+    background-color: #cb5439;
 }
 
 
