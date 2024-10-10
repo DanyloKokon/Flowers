@@ -139,7 +139,7 @@
 
 
 
-.Heromodal {
+.Heromodal, .Thanksmodal {
     display: none;
     /* Приховати модальне вікно за замовчуванням */
     position: fixed;
@@ -183,7 +183,7 @@
     }
 }
 
-.close {
+.hero-modal-close {
     color: #000;
     float: right;
     font-size: 28px;
