@@ -73,17 +73,8 @@
     .delivery {
         padding-bottom: 304px;
         background-size: 764px 264px;
+        background-image: url(../img/image-delivery-1xtab.jpg);
     }
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .delivery {
-            background-image: url(../img/image-delivery-1xtab.jpg);
-        }
-    }
-
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -134,16 +125,9 @@
     .delivery {
         background-size: 1280px 391px;
         padding-bottom: 451px;
+        background-image: url(../img/image-delivery-1xdesc.jpg);
 
     }
-    @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .delivery {
-        background-image: url(../img/image-delivery-1xdesc.jpg);
-    }
-}
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
