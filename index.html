@@ -16,8 +16,8 @@
 
     
     
-  <script type="module" crossorigin src="/Flowers/assets/index-52030933.js"></script>
-  <link rel="stylesheet" href="/Flowers/assets/index-e6673ec4.css">
+  <script type="module" crossorigin src="/Flowers/assets/index-b73960f4.js"></script>
+  <link rel="stylesheet" href="/Flowers/assets/index-52a830ae.css">
 </head>
 
 <body>
@@ -142,7 +142,7 @@
 </section>
     <div id="myHeroModal" class="Heromodal">
     <div class="hero-modal-content">
-        <span class="closeheromodal">&times;</span>
+        <span class="closeheromodal hero-modal-close">&times;</span>
         <h2 class="hero-modal-h2">Contact us</h2>
         <p class="hero-modal-p">If you have any additional questions or you want to clarify
             something before you make
@@ -156,15 +156,16 @@
 
             <label for="">
                 <p class="hero-label-p">Email</p>
-                <input class="hero-modal-input" type="mail">
+                <input class="hero-modal-input" required type="mail">
             </label>
         </form>
-        <button id="openthanksmodal closeheromodal" class="hero-send">
+        <button id="openthanksmodal "  class="hero-send closesendmodal" data-open-next-modal>
             <p class="hero-modal-button-p">Send</p>
 
         </button>
     </div>
 </div>
+
 
     <section class="about">
     <div class="container">
@@ -428,8 +429,6 @@
     
     
     
+    
 </body>
-
-
-<!-- <script src="HeroModalinModal.js"></script> -->
 </html>
