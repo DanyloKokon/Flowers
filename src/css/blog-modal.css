@@ -41,7 +41,9 @@
 }
 
 .blog-modal-btn {
-  background-color: #d4d4e0;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
   height: 18px;
   width: 18px;
   position: relative;
@@ -112,6 +114,8 @@
   }
 
   .blog-modal-btn {
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
   }
