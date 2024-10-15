@@ -2,21 +2,63 @@
     <div class=" container header-flex">
     <a class="header-logo"><img src="./img/logo1.svg" alt="logo"></a>
         <nav class="header-menu">
-            <ul class="header-list">
-                <li class="header-item">Anemone</li>
-                <li class="header-item">About us</li>
-                <li class="header-item"> Store</li>
-                <li class="header-item">Deliver</li>
-                <li class="header-item">Blog</li>
+            <ul class="header__list">
+                <li class="header__item"><a href="#Anemone" class="navigation">Anemone</a></li>
+                <li class="header__item"><a href="#AboutUs" class="navigation">About us</a></li>
+                <li class="header__item"><a href="#Store" class="navigation">Store</a></li>
+                <li class="header__item"><a href="#Delivery" class="navigation">Delivery</a></li>
+                <li class="header__item"><a href="#Blog" class="navigation">Blog</a></li>
             </ul>
         </nav>
-        <button class="header-button"><img src="./img/tel.svg" alt=""></button>
-        <button class="menu-toggle-btn js-open-menu" 
-            aria-expanded="false"
-            aria-controls="mobile-menu">
-                <svg fill="currentColor" width="24" height="24">
-                    <use href="./img/symbol-defs.svg#icon-Burger"></use>
-                </svg>
-            </button>
+        <button class="header__contact"><img src="./img/tel.svg" alt=""></button>
+        <button data-open-menu type="button" class="header__button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg fill="currentColor" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-Burger"></use>
+            </svg>
+        </button>
     </div>
+    <div data-menu-backdrop class="menu-backdrop menu__is-hidden">
+        <button data-close-menu class="menu__close" type="button">
+            <svg class="menu__cross" width="24px" height="24px">
+                <use xlink:href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a class="menu__nav" href="#Anemone">Anemone</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__nav" href="#AboutUs">About us</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__nav" href="#Store">Store</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__nav" href="#Delivery">Delivery</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__nav" href="#Blog">Blog</a>
+        </li>
+    </ul>
+</div>
 </header>
+
+<script>
+    const refse = {
+        openModalBtn: document.querySelector("[data-open-menu]"),
+        backdrop: document.querySelector("[data-menu-backdrop]"),
+        closeModalBtn: document.querySelector("[data-close-menu]"),
+    };
+
+    refse.openModalBtn.addEventListener("click", toggleModal);
+    refse.closeModalBtn.addEventListener("click", toggleModal);
+    refse.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+        refse.backdrop.classList.toggle("menu__is-hidden");
+    }
+
+    function logBackdropClick() {
+        console.log("Ще клік в бекдроп");
+    }
+</script>
