@@ -2,46 +2,45 @@
     <div class=" container header-flex">
     <a class="header-logo"><img src="./img/logo1.svg" alt="logo"></a>
         <nav class="header-menu">
-            <ul class="header-list">
-                <li class="header-item">Anemone</li>
-                <li class="header-item">About us</li>
-                <li class="header-item"> Store</li>
-                <li class="header-item">Deliver</li>
-                <li class="header-item">Blog</li>
+            <ul class="header__list">
+                <li class="header__item"><a href="#Anemone" class="navigation">Anemone</a></li>
+                <li class="header__item"><a href="#AboutUs" class="navigation">About us</a></li>
+                <li class="header__item"><a href="#Store" class="navigation">Store</a></li>
+                <li class="header__item"><a href="#Delivery" class="navigation">Delivery</a></li>
+                <li class="header__item"><a href="#Blog" class="navigation">Blog</a></li>
             </ul>
         </nav>
-        <button class="header-button"><img src="./img/tel.svg" alt=""></button>
-        <button data-open-menu type="button" class="header__button" aria-expanded="false"
-            aria-controls="mobile-menu">
-                <svg fill="currentColor" width="24" height="24">
-                    <use href="./img/symbol-defs.svg#icon-Burger"></use>
-                </svg>
+        <button class="header__contact"><img src="./img/tel.svg" alt=""></button>
+        <button data-open-menu type="button" class="header__button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg fill="currentColor" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-Burger"></use>
+            </svg>
         </button>
     </div>
-<section data-menu-backdrop class="menu-backdrop__is-hidden">
-    <button data-close-menu class="menu__close" type="button">
-        <svg class="menu__cross" width="24px" height="24px">
-            <use href="/src/images/symbol-defs.svg#cross"></use>
-        </svg>
-    </button>
+    <div data-menu-backdrop class="menu-backdrop menu__is-hidden">
+        <button data-close-menu class="menu__close" type="button">
+            <svg class="menu__cross" width="24px" height="24px">
+                <use xlink:href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
     <ul class="menu__list">
         <li class="menu__item">
-            <button class="list__button"><a class="menu__nav" href="#1">Anemone</a></button>
+            <a class="menu__nav" href="#Anemone">Anemone</a>
         </li>
         <li class="menu__item">
-            <button class="list__button"><a class="menu__nav" href="#2">About us</a></button>
+            <a class="menu__nav" href="#AboutUs">About us</a>
         </li>
         <li class="menu__item">
-            <button class="list__button"><a class="menu__nav" href="#3">Store</a></button>
+            <a class="menu__nav" href="#Store">Store</a>
         </li>
         <li class="menu__item">
-            <button class="list__button"><a class="menu__nav" href="#4">Delivery</a></button>
+            <a class="menu__nav" href="#Delivery">Delivery</a>
         </li>
         <li class="menu__item">
-            <button class="list__button"><a class="menu__nav" href="#5">Blog</a></button>
+            <a class="menu__nav" href="#Blog">Blog</a>
         </li>
     </ul>
-</section>
+</div>
 </header>
 
 <script>

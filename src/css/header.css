@@ -12,7 +12,7 @@
     display: flex;
     gap: 24px;
     align-items: center;
-
+    
 }
 
 .header-logo {
@@ -22,6 +22,7 @@
 
 .header {
     padding-top: 24px;
+    padding-bottom: 40px;
 }
 
 .menu-toggle-btn {
@@ -61,13 +62,25 @@
     font-size: 20px;
     line-height: 24px;
     color: black;
-    transition:  transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 }
-.navigation-item:hover{ 
+
+.navigation:hover {
     transform: scale(1.1);
 }
 
-.header__phone{
+.header-logo,
+.header__contact,
+.header__button{ 
+    transition:  transform 500ms ease-in-out;
+}
+ .header-logo:hover,
+.header__contact:hover,
+.header__button:hover{ 
+    transform: scale(1.1);
+}
+
+.header__phone {
     width: 20px;
     height: 20px;
 }
@@ -90,30 +103,45 @@
 }
 
 .menu-backdrop {
-    background-color: pink;
+    background-color: #e86f54;
     width: 320px;
     left: calc((100% - 320px) / 2);
     height: 100%;
     position: fixed;
     top: 0;
-    opacity: 1;
     z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
+
+.menu__is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-backdrop:not(.menu__is-hidden) {
+    opacity: 1;
+    pointer-events: all;
+}
+
 .menu__close {
     background: transparent;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
     border: none;
-    margin-left: auto;
     display: block;
-    margin-top: 22px;
-    margin-right: 22px;
 }
 
 .menu__cross {
-    fill:black;
+    fill: none;
+    stroke: white;
     width: 24px;
     height: 24px;
 }
@@ -142,13 +170,28 @@
 }
 
 .header__contact {
+    margin-left: auto;
     border: none;
     padding: 0;
     background: transparent;
 }
 
-.list__button {
+/* .list__button {
     border: none;
     padding: 0;
     background: transparent;
-}  
+}   */
+
+@media screen and (max-width: 767px) {
+    .header-logo>img {
+        width: 45px;
+    }
+}
+
+.header__button {
+    margin-left: 14px;
+}
+
+.menu-backdrop:not(.menu__is-hidden) .menu__nav {
+    color: white;
+}

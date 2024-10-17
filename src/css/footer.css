@@ -1,18 +1,18 @@
-
-
-li {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.94px;
-    font-family: "Inter", sans-serif;
+.flex_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    /* justify-content: center; */
 
     @media (min-width: 768px) {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 19.36pxpx;
-        font-family: "Inter", sans-serif;
+        gap: 44px;
+
     }
 
+    @media (min-width: 1280px) {
+        gap: 96px;
+
+    }
 }
 
 .container {
@@ -28,9 +28,16 @@ li {
     font-family: "Inter", sans-serif;
 }
 
+.footer_link {
+    text-decoration: none;
+    color: white;
+}
 
+/* <<<<<<----------------------FOOTER------------------------->>>>>>>>>> */
 
 .footer_logo {
+    transition: transform 500ms ease-in-out;
+
     @media (max-width: 1279px) {
         display: none;
     }
@@ -38,9 +45,31 @@ li {
     @media (min-width: 1280px) {
         margin-right: 210px;
     }
+
+}
+
+.footer_logo:hover {
+    transform: scale(1.1);
 }
 
 /* <<<<<<<<<<<----------------NAVIGATION---------------------------->>>>>>> */
+.Nav_h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+    font-family: "Inter", sans-serif;
+
+    margin-bottom: 18px;
+
+    @media (min-width: 767px) {
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24.2px;
+        font-family: "Inter", sans-serif;
+    }
+}
+
 .footer_navigation {
     width: 116px;
 
@@ -56,8 +85,28 @@ li {
 
 
 .navigation_item {
-    margin-top: 18px;
+    margin-top: 12px;
     margin-bottom: 1;
+    transition: transform 500ms ease-in-out;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    font-family: "Inter", sans-serif;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        font-family: "Inter", sans-serif;
+    }
+
+
+
+}
+
+.navigation_item:hover {
+    transform: scale(1.1);
 
 }
 
@@ -65,6 +114,45 @@ li {
 .opening_times {
     width: 128px;
 }
+
+.Open_h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+    font-family: "Inter", sans-serif;
+
+    margin-bottom: 18px;
+
+    @media (min-width: 767px) {
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24.2px;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+.Open_item {
+    transition: transform 500ms ease-in-out;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    font-family: "Inter", sans-serif;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36pxpx;
+        font-family: "Inter", sans-serif;
+    }
+
+}
+
+.Open_item:hover {
+    transform: scale(1.1);
+}
+
+
 
 /* <<<<<<<<<<<----------------CONTACTS---------------------------->>>>>>> */
 .Contacts {
@@ -80,37 +168,66 @@ li {
 
 .Contacts_item {
     margin-bottom: 12px;
+    transition: transform 500ms ease-in-out;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    font-family: "Inter", sans-serif;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        font-family: "Inter", sans-serif;
+    }
+
+
 }
 
+.Contacts_item:hover {
+    transform: scale(1.1);
 
+}
+
+.Contacts_h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+    font-family: "Inter", sans-serif;
+
+    margin-bottom: 18px;
+
+    @media (min-width: 767px) {
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24.2px;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+/* <<<<<<<-------------------------LOGOS--------------------->>>>>>>> */
 .logos {
     display: flex;
     gap: 14px;
-    margin-left: auto;
+    
 
     @media (min-width: 1280px) {
         flex-direction: column;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
         flex-direction: column;
         margin-left: auto;
     }
+
 }
 
-.flex_div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+.logos_item {
+    transition: transform 500ms ease-in-out;
+}
 
-    @media (min-width: 768px) {
-        gap: 44px;
-
-    }
-
-    @media (min-width: 1280px) {
-        gap: 96px;
-
-    }
+.logos_item:hover {
+    transform: scale(1.1);
 }
