@@ -48,6 +48,7 @@
     font-weight: 500;
     line-height: 17.07px;
     text-align: left;
+    align-items: center;
     gap: 9px;
     margin-bottom: 14px;
 }
@@ -98,8 +99,6 @@
         font-size: 32px;
         font-weight: 500;
         line-height: 39.01px;
-        height: 67px;
-        width: 100%;
         margin-bottom: 20px;
     }
 
